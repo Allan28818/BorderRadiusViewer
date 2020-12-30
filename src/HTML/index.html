@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Viewer</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <div class="top">
+        <input 
+        type = "number"
+        class = "topLeft"
+        onchange="handleTyped('topLeft')"
+        value = "0"        
+        />
+    
+        <input 
+        type = "number"
+        class = "topRight"
+        onchange="handleTyped('topRight')"
+        value = "0"
+        />
+        
+    </div>
+   
+    <div 
+    id = "square-viewer"
+    class = "square-viewer"
+    >
+    </div>
+    
+    <div class="bottom">
+        <input 
+        type = "number"
+        class = "bottomLeft"
+        onchange="handleTyped('bottomLeft')"
+        value = "0"
+        />
+
+        <input 
+        type = "number"
+        class = "bottomRight"
+        onchange="handleTyped('bottomRight')"
+        value = "0"
+        />
+    </div>
+
+
+    <label 
+    for="height" 
+    class = "height-label"
+    >
+    Insira a altura
+    </label>
+
+    <input 
+    type = "number"
+    name = "height"    
+    class = "height"
+    value = "0"
+    onchange="handleTyped('height')"
+    />
+
+    <label 
+    for="width" 
+    class = "width-label"
+    >
+    Insira a largura
+    </label>
+
+    <input 
+    type = "number"
+    name = "width"
+    class = "width"
+    value = "0"
+    onchange="handleTyped('width')"
+    />
+
+    <textarea 
+    id = "viewer"
+    cols="30"
+    rows="15"
+    readonly
+    placeholder="Here'll be the code :)"    
+    ></textarea>
+
+    <button onclick="get()">copy</button>
+        
+    <script src="../JS/index.js"></script>
+</body>
+</html>
