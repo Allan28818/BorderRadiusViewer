@@ -1,0 +1,1092 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body {
+    background: rgb(32, 31, 31);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+     
+.square-viewer {
+    background: rgb(0, 238, 255);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 20px 5px #fff;
+    border: 2px solid #fff;
+    transition: all 1s;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top > input {
+    border: none;
+    width: 20px;
+    height: 20px;    
+    border-radius: 02px;
+    padding: 2px;
+    display: block;
+    margin: auto;
+
+    margin-top: 20px;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom > input {
+    border: none;
+    width: 20px;
+    height: 20px;    
+    border-radius: 02px;
+    padding: 2px;
+    display: block;
+    margin: auto;
+
+    margin-top: 20px;
+}
+
+textarea,
+input {
+    transition: all .5s;
+    background:  rgb(0, 238, 255);
+    border: none;
+    font-size: 10px;
+    font-weight: bolder;
+    color: #fff;
+}
+textarea:hover,
+input:hover {
+    border: 3px solid rgb(2, 152, 163);
+    cursor: text;
+    box-shadow: 0px 0px 10px .5px #fff;
+}
+
+.height,
+.width {
+    width: 180px;
+    height: 20px;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+label {
+    color: #fff;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+#viewer {
+    height: 180px;
+    width: 180px;
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    cursor: default;
+    resize: none;
+}
+
+
+
+#viewer:focus {
+    box-shadow: 0px 0px 10px 5px #fff;
+    width: 190px;
+    height: 190px;
+}
+
+#viewer ~ button {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 30px;
+    background: rgb(0, 238, 255);
+    color: #fff;
+    display: block;
+    margin: auto;
+    border: 2px solid #fff;
+    transition: all 0.5s;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#viewer ~ button:hover {
+    background: rgb(2, 124, 73);
+    font-size: 24px;
+    letter-spacing: 2px;    
+}
+
+@media(min-width: 280px) {
+            
+        .square-viewer {
+            background: rgb(0, 238, 255);
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: auto;
+            box-shadow: 0px 0px 20px 5px #fff;
+            border: 2px solid #fff;
+            transition: all 1s;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .top > input {
+            border: none;
+            width: 20px;
+            height: 20px;    
+            border-radius: 02px;
+            padding: 7.5px;
+            display: block;
+            margin: auto;
+
+            margin-top: 20px;
+        }
+
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bottom > input {
+            border: none;
+            width: 20px;
+            height: 20px;    
+            border-radius: 02px;
+            padding: 7.5px;
+            display: block;
+            margin: auto;
+
+            margin-top: 20px;
+        }
+
+        textarea,
+        input {
+            transition: all .5s;
+            background:  rgb(0, 238, 255);
+            border: none;
+            font-size: 10px;
+            font-weight: bolder;
+            color: #fff;
+        }
+        textarea:hover,
+        input:hover {
+            border: 3px solid rgb(2, 152, 163);
+            cursor: text;
+            box-shadow: 0px 0px 10px .5px #fff;
+        }
+
+        .height,
+        .width {
+            width: 180px;
+            height: 20px;
+            font-size: 20px;
+            display: block;
+            margin: auto;
+            border-radius: 50px;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        label {
+            color: #fff;
+            display: block;
+            margin: auto;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+
+        #viewer {
+            height: 180px;
+            width: 180px;
+            border-radius: 30px;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            padding: 10px;
+            cursor: default;
+            resize: none;
+        }
+
+
+
+        #viewer:focus {
+            box-shadow: 0px 0px 10px 5px #fff;
+            width: 190px;
+            height: 190px;
+        }
+
+        #viewer ~ button {
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 30px;
+            background: rgb(0, 238, 255);
+            color: #fff;
+            display: block;
+            margin: auto;
+            border: 2px solid #fff;
+            transition: all 0.5s;
+            font-weight: bolder;
+            cursor: pointer;
+            margin-bottom: 50px;
+        }
+
+        #viewer ~ button:hover {
+            background: rgb(2, 124, 73);
+            font-size: 24px;
+            letter-spacing: 2px;    
+        }
+}
+
+
+
+@media(min-width: 320px) {
+    
+    .square-viewer {
+        background: rgb(0, 153, 255);
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: auto;
+        box-shadow: 0px 0px 20px 5px #fff;
+        border: 2px solid #fff;
+        transition: all 1s;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top > input {
+        border: none;
+        width: 40px;
+        height: 20px;    
+        border-radius: 10px;
+        padding: 5px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottom > input {
+        border: none;
+        width: 40px;
+        height: 20px;    
+        border-radius: 10px;
+        padding: 5px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    textarea,
+    input {
+        transition: all .5s;
+        background: rgb(0, 153, 255);
+        border: none;
+        font-size: 10px;
+        font-weight: bolder;
+        color: #fff;
+    }
+    textarea:hover,
+    input:hover {
+        border: 3px solid rgb(4, 107, 175);
+        cursor: text;
+        box-shadow: 0px 0px 10px .5px #fff;
+    }
+
+    .height,
+    .width {
+        width: 280;
+        height: 25px;
+        font-size: 20px;
+        display: block;
+        margin: auto;
+        border-radius: 50px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    label {
+        color: #fff;
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+
+    #viewer {
+        height: 280;
+        width: 280;
+        border-radius: 25px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 10px;
+        cursor: default;
+        resize: none;
+    }
+
+
+
+    #viewer:focus {
+        box-shadow: 0px 0px 10px 5px #fff;
+        width: 290px;
+        height: 290px;
+    }
+
+    #viewer ~ button {
+        width: 280px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 30px;
+        background:rgb(0, 153, 255);
+        color: #fff;
+        display: block;
+        margin: auto;
+        border: 2px solid #fff;
+        transition: all 0.5s;
+        font-weight: bolder;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    #viewer ~ button:hover {
+        background: rgb(4, 107, 175);
+        font-size: 25px;
+        letter-spacing: 2px;    
+    }
+}
+
+
+
+@media(min-width: 360px) {
+     
+    .square-viewer {
+        background: rgb(153, 0, 255);
+        width: 340px;
+        height: 340px;
+        display: block;
+        margin: auto;
+        box-shadow: 0px 0px 20px 5px #fff;
+        border: 2px solid #fff;
+        transition: all 1s;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top > input {
+        border: none;
+        width: 70px;
+        height: 70px;    
+        border-radius: 10px;
+        padding: 5px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottom > input {
+        border: none;
+        width: 70px;
+        height: 70px;    
+        border-radius: 10px;
+        padding: 5px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    textarea,
+    input {
+        transition: all .5s;
+        background:rgb(153, 0, 255);
+        border: none;
+        font-size: 20px;
+        font-weight: bolder;
+        color: #fff;
+    }
+    textarea:hover,
+    input:hover {
+        border: 3px solid rgb(97, 3, 141);
+        cursor: text;
+        box-shadow: 0px 0px 10px .5px #fff;
+    }
+
+    .height,
+    .width {
+        width: 340px;
+        height: 30px;
+        font-size: 25px;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    label {
+        color: #fff;
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+
+    #viewer {
+        height: 340px;
+        width: 340px;
+        border-radius: 25px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 10px;
+        cursor: default;
+        resize: none;
+    }
+
+
+
+    #viewer:focus {
+        box-shadow: 0px 0px 10px 5px #fff;
+        width: 350px;
+        height: 350px;
+    }
+
+    #viewer ~ button {
+        width: 350px;
+        height: 40px;
+        font-size: 27px;
+        border-radius: 30px;
+        background:rgb(153, 0, 255);
+        color: #fff;
+        display: block;
+        margin: auto;
+        border: 2px solid #fff;
+        transition: all 0.5s;
+        font-weight: bolder;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    #viewer ~ button:hover {
+        background: rgb(97, 3, 141);
+        font-size: 30px;
+        letter-spacing: 2px;    
+    }
+}
+
+
+
+
+
+
+@media(min-width: 411px) {
+       
+    .square-viewer {
+        background: rgb(0, 255, 42);
+        width: 380px;
+        height: 380px;
+        display: block;
+        margin: auto;
+        box-shadow: 0px 0px 20px 5px #fff;
+        border: 2px solid #fff;
+        transition: all 1s;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top > input {
+        border: none;
+        width: 150px;
+        height: 30px;    
+        border-radius: 10px;
+        padding: 10px;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottom > input {
+        border: none;
+        width: 150px;
+        height: 30px;    
+        border-radius: 10px;
+        padding: 10px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    textarea,
+    input {
+        transition: all .5s;
+        background:rgb(0, 255, 42);
+        border: none;
+        font-size: 20px;
+        font-weight: bolder;
+        color: #fff;
+    }
+    textarea:hover,
+    input:hover {
+        border: 3px solid rgb(4, 150, 28);
+        cursor: text;
+        box-shadow: 0px 0px 10px .5px #fff;
+    }
+
+    .height,
+    .width {
+        width: 350px;
+        height: 80px;
+        font-size: 30px;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    label {
+        color: #fff;
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bolder;
+    }
+
+
+    #viewer {
+        height: 200px;
+        width: 340px;
+        border-radius: 25px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 10px;
+        cursor: default;
+        resize: none;
+    }
+
+
+
+    #viewer:focus {
+        box-shadow: 0px 0px 10px 5px #fff;
+        width: 360px;
+        height: 100px;
+    }
+
+    #viewer ~ button {
+        width: 380px;
+        height: 40px;
+        font-size: 27px;
+        border-radius: 30px;
+        background: rgb(0, 255, 42);
+        color: #fff;
+        display: block;
+        margin: auto;
+        border: 2px solid #fff;
+        transition: all 0.5s;
+        font-weight: bolder;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    #viewer ~ button:hover {
+        background:rgb(4, 150, 28);
+        font-size: 35px;
+        letter-spacing: 2px;    
+    }
+}
+
+
+
+
+
+
+
+
+
+@media(min-width: 540px) {
+     
+    .square-viewer {
+        background:#FFA500;
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin: auto;
+        box-shadow: 0px 0px 20px 5px #fff;
+        border: 2px solid #fff;
+        transition: all 1s;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top > input {
+        border: none;
+        width: 90px;
+        height: 90px;    
+        border-radius: 25px;
+        padding: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottom > input {
+        border: none;
+        width: 90px;
+        height: 90px;    
+        border-radius: 25px;
+        padding: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    textarea,
+    input {
+        transition: all .5s;
+        background:#FFA500;
+        border: none;
+        font-size: 20px;
+        font-weight: bolder;
+        color: #fff;
+    }
+    textarea:hover,
+    input:hover {
+        border: 3px solid #996504;
+        cursor: text;
+        box-shadow: 0px 0px 10px .5px #fff;
+    }
+
+    .height,
+    .width {
+        width: 420px;
+        height: 80px;
+        font-size: 30px;
+        display: block;
+        margin: auto;
+        border-radius: 50px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    label {
+        color: #fff;
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bolder;
+    }
+
+
+    #viewer {
+        height: 200px;
+        width: 500px;
+        border-radius: 25px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 30px;
+        cursor: default;
+        resize: none;
+    }
+
+
+
+    #viewer:focus {
+        box-shadow: 0px 0px 10px 5px #fff;
+        width: 520px;
+        height: 250px;
+    }
+
+    #viewer ~ button {
+        width: 500px;
+        height: 80px;
+        font-size: 40px;
+        border-radius: 30px;
+        background: #FFA500;
+        color: #fff;
+        display: block;
+        margin: auto;
+        border: 2px solid #fff;
+        transition: all 0.5s;
+        font-weight: bolder;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    #viewer ~ button:hover {
+        background: #996504;
+        font-size: 45px;
+        letter-spacing: 2px;    
+    }
+}
+
+
+
+
+
+@media(min-width: 768px) {
+       
+    .square-viewer {
+        background:#ff1100;
+        width: 450px;
+        height: 450px;
+        display: block;
+        margin: auto;
+        box-shadow: 0px 0px 20px 5px #fff;
+        border: 2px solid #fff;
+        transition: all 1s;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top > input {
+        border: none;
+        width: 200px;
+        height: 90px;    
+        border-radius: 30px;
+        padding: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottom > input {
+        border: none;
+        width: 200px;
+        height: 90px;    
+        border-radius: 30px;
+        padding: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    textarea,
+    input {
+        transition: all .5s;
+        background:#ff1100;
+        border: none;
+        font-size: 40px;
+        font-weight: bolder;
+        color: #fff;
+    }
+    textarea:hover,
+    input:hover {
+        border: 7px solid #FFF;
+        cursor: text;
+        box-shadow: 0px 0px 10px .5px #fff;
+    }
+
+    .height,
+    .width {
+        width: 600px;
+        height: 80px;
+        font-size: 30px;
+        display: block;
+        margin: auto;
+        border-radius: 50px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    label {
+        color: #fff;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bolder;
+    }
+
+
+    #viewer {
+        height: 600px;
+        width: 600px;
+        border-radius: 25px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 30px;
+        cursor: default;
+        resize: none;
+    }
+
+
+
+    #viewer:focus {
+        box-shadow: 0px 0px 10px 5px #fff;
+        width: 650px;
+        height: 650px;
+    }
+
+    #viewer ~ button {
+        width: 700px;
+        height: 90px;
+        font-size: 50px;
+        border-radius: 30px;
+        background: #ff1100;
+        color: #fff;
+        display: block;
+        margin: auto;
+        border: 4px solid #fff;
+        transition: all 0.5s;
+        font-weight: bolder;
+        cursor: pointer;
+        margin-bottom: 80px;
+    }
+
+    #viewer ~ button:hover {
+        background: #FFF;
+        color: #F00;
+        box-shadow: 0px 0px 20px 5px #fff;
+        font-size: 60px;
+        letter-spacing: 2px;    
+    }
+}
+
+
+
+@media(min-width: 1024px) {
+        
+    .square-viewer {
+        background: rgb(0, 255, 149);
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        box-shadow: 0px 0px 20px 5px #fff;
+        border: 2px solid #fff;
+        transition: all 1s;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top > input {
+        border: none;
+        width: 100px;
+        height: 100px;    
+        border-radius: 20px;
+        padding: 10px;
+        display: block;
+        margin: auto;
+
+        margin-top: 20px;
+    }
+
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottom > input {
+        border: none;
+        width: 100px;
+        height: 100px;    
+        border-radius: 20px;
+        padding: 10px;
+        display: block;
+        margin: auto;
+
+        margin-top: 20px;
+    }
+
+    textarea,
+    input {
+        transition: all .5s;
+        background: rgb(3, 202, 119);
+        border: none;
+        font-size: 50px;
+        font-weight: bolder;
+        color: #fff;
+    }
+    textarea:hover,
+    input:hover {
+        border: 3px solid rgb(2, 124, 73);
+        cursor: text;
+        box-shadow: 0px 0px 10px .5px #fff;
+    }
+
+    .height,
+    .width {
+        width: 800px;
+        height: 80px;
+        font-size: 20px;
+        display: block;
+        margin: auto;
+        border-radius: 50px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    label {
+        color: #fff;
+        display: block;
+        margin: auto;
+        margin-top: 60px;
+        text-align: center;
+        font-size: 60px;
+        font-weight: bolder;
+    }
+
+
+    #viewer {
+        height: 600px;
+        width: 600px;
+        border-radius: 30px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding: 30px;
+        cursor: default;
+        resize: none;
+    }
+
+
+
+    #viewer:focus {
+        box-shadow: 0px 0px 10px 5px #fff;
+        width: 710px;
+        height: 710px;
+    }
+
+    #viewer ~ button {
+        width: 800px;
+        height: 100px;
+        font-size: 50px;
+        border-radius: 30px;
+        background: rgb(0, 255, 149);
+        color: #fff;
+        display: block;
+        margin: auto;
+        border: 2px solid #fff;
+        transition: all 0.5s;
+        font-weight: bolder;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    #viewer ~ button:hover {
+        background: rgb(2, 124, 73);
+        font-size: 70px;
+        letter-spacing: 2px;    
+        color: #fff;
+    }
+}
